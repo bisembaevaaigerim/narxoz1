@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: mistyrose;
+    margin: 0;
+}
+h1 {
+    margin: 20px 0;
+    color: deeppink;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    width: 220px;
+    padding: 12px;
+    border-radius: 8px;
+    background: lavenderblush;
+    border: 1px solid pink;
+    box-shadow: 2px 2px 6px lightpink;
+}
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    color: hotpink;
+    margin-bottom: 5px;
+}
+.description {
+    font-style: italic;
+    font-size: 14px;
+    color: palevioletred;
+}
+.price {
+    color: mediumvioletred;
+    font-size: 17px;
+    margin: 10px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: pink;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.btn:hover {
+    background: deeppink;
+}

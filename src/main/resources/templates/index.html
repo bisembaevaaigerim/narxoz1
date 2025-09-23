@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book store</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<h1>Book Store</h1>
+<div class="container">
+    <div th:each="item : ${items}" class="card">
+        <div class="name" th:text="${item.name}"></div>
+        <div class="description" th:text="${item.description}"></div>
+        <div class="price" th:text="${item.price+' $'}"></div>
+        <a href="#" class="btn">Details</a>
+    </div>
+</div>
+</body>
+</html>
