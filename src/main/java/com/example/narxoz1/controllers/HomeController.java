@@ -5,13 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class HomeController {
     @GetMapping("/")
     public String indexPage(Model model) {
-        List<Items> books = new ArrayList<>();
+        ArrayList<Items> books = new ArrayList<>();
         books.add(new Items(1L, "Harry Potter and the philosopher's stone", "J.K. Rowling", 19.99));
         books.add(new Items(2L, "Harry Potter and the chamber of secrets", "J.K. Rowling", 21.50));
         books.add(new Items(3L, "The shining", "Stephen King", 18.75));
